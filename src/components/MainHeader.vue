@@ -97,13 +97,10 @@ export default {
 
         .main-nav {
             .nav__list{
-                display: flex;
-                gap: 1.5rem;
+                @include list-wrapper;
 
                 .nav__list__item {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 1rem;
+                    @include list-items;
                     
                     &.active, &:hover {
                         color: $dc-blue;
