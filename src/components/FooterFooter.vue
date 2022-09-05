@@ -70,6 +70,7 @@ export default {
                 color: white;
                 border: 1px solid $dc-blue;
                 padding: 1rem;
+                cursor: pointer;
             }
 
             .socials {
