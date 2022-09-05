@@ -75,9 +75,11 @@ export default {
 
         .footer-list {
             @include list-wrapper;
+            white-space: nowrap;
 
             .footer__list__item {
                 @include list-items;
+                flex-grow: 1;
 
                 a {
                     display: flex;
