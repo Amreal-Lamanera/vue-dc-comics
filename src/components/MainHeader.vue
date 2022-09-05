@@ -114,7 +114,7 @@ export default {
                         position: absolute;
                         height: 5px;
                         width: 100%;
-                        background-color: tomato;
+                        background-color: $dc-blue;
                         left: 0;
                         bottom: calc(-50px + 0.5rem - 2rem);
                         content: '';
