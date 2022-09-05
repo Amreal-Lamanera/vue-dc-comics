@@ -1,9 +1,11 @@
 <template>
-  <main class="container">
-    <h1 class="main-title">
-        Content goes here
-    </h1>
-  </main>
+    <main>
+        <div class="container">
+            <h1 class="main-title">
+                Content goes here
+            </h1>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -13,12 +15,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-    .container {
+    main {
         background-color: #000;
         color: white;
-        .main-title{
-            font-weight: bold;
+
+        .container {
+            .main-title{
+                font-weight: bold;
+            }
         }
     }
 

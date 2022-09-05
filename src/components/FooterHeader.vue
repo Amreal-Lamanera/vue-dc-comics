@@ -1,7 +1,7 @@
 <template>
   
-    <header class="container">
-        <nav class="footer-nav">
+    <header>
+        <nav class="container">
 
             <ul class="footer-list">
                 <li class="footer__list__item">
@@ -65,33 +65,35 @@ export default {
 
     @import '@/style/variables';
     @import '@/style/mixins';
+
+    header {
+        background-color: $dc-blue;
     
     .container {
-        background-color: $dc-blue;
         color: #FFF;
         padding: 3rem 1rem;
-        .footer-nav {
-            .footer-list {
-                @include list-wrapper;
 
-                .footer__list__item {
-                    @include list-items;
+        .footer-list {
+            @include list-wrapper;
 
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1rem;
+            .footer__list__item {
+                @include list-items;
 
-                        img {
-                            height: 50px;
-                        }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img {
+                        height: 50px;
                     }
-
                 }
 
             }
+
         }
     }
+}
 
 </style>
