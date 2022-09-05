@@ -1,6 +1,6 @@
 <template>
   
-  <main>
+  <div class="footer-main">
     <div class="container">
 
         <div class="col-6">
@@ -207,7 +207,7 @@
         <div class="col-6 bg"></div>
 
     </div>
-  </main>
+  </div>
 
 </template>
 
@@ -219,53 +219,52 @@ export default {
 
 <style lang="scss" scoped>
 
-    main {
+    .footer-main {
         background-image: url('@/assets/footer-bg.jpg');
         background-size: cover;
     
-    .container {
-        display: flex;
-        padding: 0;
-        color: #FFF;
+        .container {
+            display: flex;
+            padding: 0;
+            color: #FFF;
 
-        .col-6 {
-            flex-basis: 50%;
+            .col-6 {
+                flex-basis: 50%;
 
-            &.bg {
-                background-image: url('@/assets/dc-logo-bg.png');
-                background-repeat: no-repeat;
-                background-position: center;
-            }
+                &.bg {
+                    background-image: url('@/assets/dc-logo-bg.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
 
-            .lists-wrapper {
-                padding: 2rem 0;
-                display: flex;
-                gap: 2rem;
-
-                .list {
-                    margin-bottom: 1rem;
-
-                    &:first-child {
+                .lists-wrapper {
+                    padding: 2rem 0;
                     display: flex;
-                    flex-direction: column;
-                    }
+                    gap: 2rem;
 
-                    h3 {
-                        text-transform: uppercase;
-                        font-weight: bold;
+                    .list {
                         margin-bottom: 1rem;
 
-                    }
+                        &:first-child {
+                        display: flex;
+                        flex-direction: column;
+                        }
 
-                    li:not(.list-title) {
-                        line-height: 1.5rem;
-                        font-size: 0.75rem;
-                        color: #818181;
+                        h3 {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            margin-bottom: 1rem;
+
+                        }
+
+                        li:not(.list-title) {
+                            line-height: 1.5rem;
+                            font-size: 0.75rem;
+                            color: #818181;
+                        }
                     }
                 }
             }
         }
     }
-}
-
 </style>

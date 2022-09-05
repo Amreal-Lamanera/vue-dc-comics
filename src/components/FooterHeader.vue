@@ -1,6 +1,6 @@
 <template>
   
-    <header>
+    <div class="footer-header">
         <nav class="container">
 
             <ul class="footer-list">
@@ -51,7 +51,7 @@
             </ul>
 
         </nav>
-    </header>
+    </div>
 
 </template>
 
@@ -66,7 +66,7 @@ export default {
     @import '@/style/variables';
     @import '@/style/mixins';
 
-    header {
+    .footer-header {
         background-color: $dc-blue;
     
     .container {
