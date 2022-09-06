@@ -262,6 +262,10 @@ export default {
                             font-size: 0.75rem;
                             color: #818181;
                         }
+
+                        li a:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
