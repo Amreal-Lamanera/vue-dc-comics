@@ -96,6 +96,16 @@ export default {
 
         }
     }
-}
+    }
+
+    span {
+        display: none;
+    }
+
+    @media (min-width: 1024px) {
+        span {
+            display: inline;
+        }
+    }
 
 </style>

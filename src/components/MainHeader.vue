@@ -99,6 +99,7 @@ export default {
         .main-nav {
             .nav__list{
                 @include list-wrapper;
+                display: none;
 
                 .nav__list__item {
                     @include list-items;
@@ -119,6 +120,12 @@ export default {
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .nav__list {
+            display: flex !important;
         }
     }
 
