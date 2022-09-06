@@ -16,8 +16,10 @@ export default {
   components: {
     MainHeader,
     MainComponent,
-    MainFooter
-}
+    MainFooter,
+  },
+  mounted() {
+  }
 }
 </script>
 
