@@ -2,213 +2,30 @@
   
   <div class="footer-main">
     <div class="container">
-
-            <div class="lists-wrapper">
-
-                <div>
-
-                    <ul class="list">
-
-                        <li class="list-title">
-                            <h3>
-                                dc comics
-                            </h3>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Characters
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Comics
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Movies
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                TV
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Games
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Videos
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                News
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="list">
-
-                        <li class="list-title">
-                            <h3>
-                                shop
-                            </h3>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Shop DC
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#nogo">
-                                Shop DC Collectables
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <ul class="list">
-
-                    <li class="list-title">
-                        <h3>
-                            dc
-                        </h3>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Terms Of Use
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Privacy policy (New)
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Ad Choice
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Advertising
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Jobs
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Subscription
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            Talent Workshops
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#nogo">
-                            CPSC Certificates
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            Rating
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            Shop Help
-                        </a>
-
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            Contact Us
-                        </a>
-                    </li>
-
-                </ul>
-
-                <ul class="list">
-
-                    <li class="list-title">
-                        <h3>
-                            sites
-                        </h3>
-                    </li>
-
-                    <li>
-                        <a href="#nogo">
-                            DC
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#nogo">
-                            MAD Magazine
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            DC Kids
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            DC Universe
-                        </a>
-
-                    </li>
-    
-                    <li>
-                        <a href="#nogo">
-                            DC Power Visa
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+        <div>
+            <FooterWidget :title="titles[0]" :widget="widgets[0]" />
+            <FooterWidget :title="titles[1]" :widget="widgets[1]" />
+        </div>
+        <FooterWidget :title="titles[2]" :widget="widgets[2]" />
+        <FooterWidget :title="titles[3]" :widget="widgets[3]" />
     </div>
   </div>
 
 </template>
 
 <script>
-export default {
 
+    import widgets from './FooterWidgets';
+    import FooterWidget from './FooterWidget.vue';
+
+    export default {
+    data() {
+        return {
+            widgets,
+            titles: ['dc comics', 'shop', 'dc', 'sites']
+        };
+    },
+    components: { FooterWidget }
 }
 </script>
 
@@ -225,38 +42,6 @@ export default {
             background-image: url('@/assets/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: center right;
-
-                .lists-wrapper {
-                    padding: 2rem 0;
-                    display: flex;
-                    gap: 2rem;
-
-                    .list {
-                        margin-bottom: 1rem;
-
-                        &:first-child {
-                        display: flex;
-                        flex-direction: column;
-                        }
-
-                        h3 {
-                            text-transform: uppercase;
-                            font-weight: bold;
-                            margin-bottom: 1rem;
-
-                        }
-
-                        li:not(.list-title) {
-                            line-height: 1.5rem;
-                            font-size: 0.75rem;
-                            color: #818181;
-                        }
-
-                        li a:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
         }
     }
 </style>

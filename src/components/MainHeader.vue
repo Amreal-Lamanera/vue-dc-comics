@@ -9,66 +9,11 @@
 
         <ul class="nav__list">
 
-            <li class="nav__list__item">
+            <li v-for="(widget, i) in widgets" :key="i" :class="[widget.active ? 'active' : '', 'nav__list__item']">
                 <a href="#">
-                    characters
+                    {{ widget.title }}
                 </a>
             </li>
-
-            <li class="nav__list__item active">
-                <a href="#">
-                    comics
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    movies
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    tv
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    games
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    collectibles
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    videos
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    fans
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    news
-                </a>
-            </li>
-
-            <li class="nav__list__item">
-                <a href="#">
-                    shop
-                </a>
-            </li>
-
         </ul>
 
     </nav>
@@ -77,9 +22,15 @@
 </template>
 
 <script>
-export default {
+    import widgets from './HeaderWidgets'
 
-}
+    export default {
+        data() {
+            return {
+                widgets
+            }
+        }
+    }
 </script>
 
 <style lang="scss" scoped>

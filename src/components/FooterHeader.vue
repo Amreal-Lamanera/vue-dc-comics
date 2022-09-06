@@ -102,10 +102,22 @@ export default {
         display: none;
     }
 
+    a:hover span {
+        display: block;
+    }
+
+    a:hover {
+        flex-direction: column;
+    }
+
     @media (min-width: 1024px) {
         span {
             display: inline;
         }
+
+        a:hover {
+        flex-direction: row;
+    }
     }
 
 </style>
