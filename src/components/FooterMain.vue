@@ -203,9 +203,6 @@
 
             </div>
         </div>
-
-        <div class="col-6 bg"></div>
-
     </div>
   </div>
 
@@ -227,15 +224,12 @@ export default {
             display: flex;
             padding: 0;
             color: #FFF;
+            background-image: url('@/assets/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: center right;
 
             .col-6 {
                 flex-basis: 50%;
-
-                &.bg {
-                    background-image: url('@/assets/dc-logo-bg.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
 
                 .lists-wrapper {
                     padding: 2rem 0;
