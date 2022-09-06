@@ -1,11 +1,11 @@
 <template>
     <main>
         <div class="jumbotron">
+        </div>
+        <div class="container">
             <div class="current">
                 <h2>current series</h2>
             </div>
-        </div>
-        <div class="container">
             <WidgetCard :comics="comics" />
             <div class="load">
                 load more
@@ -45,27 +45,28 @@ export default {
             background-position: top;
             background-size: cover;
             height: 40vh;
-            position: relative;
-            
-            .current {
-                text-transform: uppercase;
-                position: absolute;
-                background-color: $dc-blue;
-                height: 3rem;
-                bottom: -1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0 1rem;
-            }
         }
-
+        
         .container {
             padding-top: 3rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+            position: relative;
+
+            .current {
+                text-transform: uppercase;
+                position: absolute;
+                background-color: $dc-blue;
+                height: 3rem;
+                top: -1.5rem;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 1rem;
+            }
 
             .load {
                 padding: 1rem 5rem;
