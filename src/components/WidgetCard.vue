@@ -21,7 +21,7 @@ export default {
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         font-size: 1rem;
         font-weight: normal;
@@ -42,9 +42,19 @@ export default {
             h4 {
                 margin-bottom: 2rem;
             }
-
         }
+    }
 
+    @media (min-width: 500px) {
+        .card-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 980px) {
+        .card-container {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 
 </style>
