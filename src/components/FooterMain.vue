@@ -37,11 +37,12 @@
     
         .container {
             display: flex;
-            padding: 0;
+            padding: 2rem 0;
             color: #FFF;
             background-image: url('@/assets/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: center right;
+            gap: 2rem;
         }
     }
 </style>

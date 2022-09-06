@@ -1,5 +1,5 @@
 <template>
-    <div class="list-wrapper">
+    <div class="lists-wrapper">
 
         <ul class="list">
 
@@ -32,9 +32,6 @@ export default {
 <style lang="scss" scoped>
 
     .lists-wrapper {
-        padding: 2rem 0;
-        display: flex;
-        gap: 2rem;
 
         .list {
             margin-bottom: 1rem;
@@ -48,7 +45,6 @@ export default {
                 text-transform: uppercase;
                 font-weight: bold;
                 margin-bottom: 1rem;
-
             }
 
             li:not(.list-title) {
